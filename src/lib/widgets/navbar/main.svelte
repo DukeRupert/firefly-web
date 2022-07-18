@@ -1,21 +1,22 @@
 <script lang="ts">
-	//Todo
+	import { logo } from '$lib/constants';
+	let y = 0;
+	$: opacity = Math.round(y / 10);
+	$: console.log(opacity);
 </script>
 
-<div class="bg-gray-900 pt-6">
+<svelte:window bind:scrollY={y} />
+
+<div class="hide fixed style:opacity={opacity} top-0 w-full z-50 bg-gray-900 py-6">
 	<nav
 		class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
 		aria-label="Global"
 	>
 		<div class="flex items-center flex-1">
 			<div class="flex items-center justify-between w-full md:w-auto">
-				<a href="#">
-					<span class="sr-only">Workflow</span>
-					<img
-						class="h-8 w-auto sm:h-10"
-						src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-						alt=""
-					/>
+				<a href="/">
+					<span class="sr-only">{logo.title}</span>
+					<img class="h-8 w-auto sm:h-10" src={logo.src} alt={logo.alt} />
 				</a>
 				<div class="-mr-2 flex items-center md:hidden">
 					<button
