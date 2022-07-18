@@ -3,11 +3,13 @@
 	import Features from '$lib/sections/Features.svelte';
 	import Hero from '$lib/sections/Hero.svelte';
 	import LogoCloud from '$lib/sections/LogoCloud.svelte';
+	import Pricing from '$lib/sections/Pricing.svelte';
 </script>
 
 <main>
 	<Hero />
 	<Features />
-	<Cta />
 	<LogoCloud />
+	<Pricing />
+	<Cta />
 </main>
