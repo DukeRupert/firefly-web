@@ -6,7 +6,7 @@
 	import Pricing from '$lib/sections/Pricing.svelte';
 </script>
 
-<main class="mt-[85vh] lg:mt-[100vh]">
+<main class="mt-[85vh] lg:mt-[95vh]">
 	<Hero />
 	<Features />
 	<Pricing />
