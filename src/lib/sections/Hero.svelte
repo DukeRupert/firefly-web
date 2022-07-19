@@ -24,8 +24,7 @@
 
 	// Set day to false when user scrolls past 1/5 height
 	function changeBackgroundOnScroll(y: number, height: number) {
-		let fifth = Math.round(height / 5);
-		let day = y > fifth ? false : true;
+		let day = y > height ? false : true;
 		return day;
 	}
 
@@ -36,73 +35,39 @@
 		return !mouse || !scroll ? false : true;
 	}
 
-	$: day = changeBackground(m.x, y, width, height);
+	$: day = changeBackground(m.x, y, width, 200);
 </script>
 
 <svelte:window bind:scrollY={y} bind:innerWidth={width} bind:innerHeight={height} />
 
-<div
-	class="relative flex h-screen w-screen pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden"
-	on:mousemove={handleMousemove}
->
+<div class="mx-auto max-w-7xl" on:mousemove={handleMousemove}>
 	<div
-		class="absolute inset-0 w-full h-full  sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden bg-gray-900 {day
+		class="absolute inset-0 w-full h-full sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden bg-gray-900 {day
 			? "bg-[url('backgrounds/Valley-day.svg')]"
-			: "bg-[url('backgrounds/Valley-night.svg')]"} bg-cover bg-fixed transition-all  ease-in duration-500"
+			: "bg-[url('backgrounds/Valley-night.svg')]"} bg-cover bg-center bg-fixed transition-all  ease-in duration-500"
 	>
-		<div class="mx-auto max-w-7xl lg:px-8">
-			<div class="lg:grid lg:grid-cols-2 lg:gap-8">
-				<div
-					class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center"
-				>
-					<div class="lg:py-24">
-						<h1
-							class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"
-						>
-							<span class="block">A better way to</span>
-							<span class="block text-indigo-400">ship web apps</span>
-						</h1>
-						<p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-							Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat
-							commodo. Elit sunt amet fugiat veniam occaecat fugiat.
-						</p>
-						<div class="mt-10 sm:mt-12">
-							<form action="#" class="sm:max-w-xl sm:mx-auto lg:mx-0">
-								<div class="sm:flex">
-									<div class="min-w-0 flex-1">
-										<label for="email" class="sr-only">Email address</label>
-										<input
-											id="email"
-											type="email"
-											placeholder="Enter your email"
-											class="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900"
-										/>
-									</div>
-									<div class="mt-3 sm:mt-0 sm:ml-3">
-										<button
-											type="submit"
-											class="block w-full py-3 px-4 rounded-md shadow bg-indigo-500 text-white font-medium hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900"
-											>Start free trial</button
-										>
-									</div>
-								</div>
-								<p class="mt-3 text-sm text-gray-300 sm:mt-4">
-									Start your free 14-day trial, no credit card necessary. By providing your email,
-									you agree to our <a href="#" class="font-medium text-white">terms of service</a>.
-								</p>
-							</form>
-						</div>
-					</div>
+		<div class="mt-64 md:mt-32 md:grid md:grid-cols-4 md:grid-rows-4 md:gap-8">
+			<div
+				class="col-span-2 col-start-2 px-4 sm:px-6 sm:text-center md:max-w-2xl lg:text-left lg:flex lg:items-center"
+			>
+				<div>
+					<h1
+						class="mt-4 text-4xl tracking-tight font-extrabold {day
+							? 'text-gray-900'
+							: 'text-gray-300'} sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl transition-colors ease-in duration-500"
+					>
+						<span class="md:block">Web Developers</span>
+						<span class="text-blue-600 md:block">Helping You Grow</span>
+					</h1>
+					<p
+						class="mt-3 text-base {day
+							? 'text-gray-700'
+							: 'text-gray-400'} sm:mt-5 sm:text-xl lg:text-lg xl:text-xl transition-colors ease-in duration-500"
+					>
+						The internet can be difficult. Let us deal with the web so you can focus on growing your
+						business.
+					</p>
 				</div>
-				<!-- <div class="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
-				<div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
-					<img
-						class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-						src="https://tailwindui.com/img/component-images/cloud-illustration-indigo-400.svg"
-						alt=""
-					/>
-				</div>
-			</div> -->
 			</div>
 		</div>
 	</div>

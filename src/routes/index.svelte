@@ -6,10 +6,10 @@
 	import Pricing from '$lib/sections/Pricing.svelte';
 </script>
 
-<main>
+<main class="mt-[85vh] lg:mt-[100vh]">
 	<Hero />
 	<Features />
-	<LogoCloud />
 	<Pricing />
+	<LogoCloud />
 	<Cta />
 </main>

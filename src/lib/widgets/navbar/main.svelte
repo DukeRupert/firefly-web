@@ -1,13 +1,20 @@
 <script lang="ts">
 	import { logo } from '$lib/constants';
+	import { isNavOpen } from '$lib/stores';
 	let y = 0;
-	$: opacity = Math.round(y / 10);
-	$: console.log(opacity);
+	$: opacity = Math.round(y / 5) / 100;
+
+	function handleClick() {
+		isNavOpen.update((v) => !v);
+	}
 </script>
 
 <svelte:window bind:scrollY={y} />
 
-<div class="hide fixed style:opacity={opacity} top-0 w-full z-50 bg-gray-900 py-6">
+<div
+	class="fixed top-0 w-full z-50 py-6 transition-opacity ease-out duration-150"
+	style={`opacity: ${opacity}; background-color: #0C1226`}
+>
 	<nav
 		class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
 		aria-label="Global"
@@ -23,6 +30,7 @@
 						type="button"
 						class="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
 						aria-expanded="false"
+						on:click={handleClick}
 					>
 						<span class="sr-only">Open main menu</span>
 						<!-- Heroicon name: outline/menu -->
