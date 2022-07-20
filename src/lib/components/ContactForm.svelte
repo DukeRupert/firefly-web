@@ -292,6 +292,3 @@
 		>
 	</div>
 </form>
-<div class="text-right sm:col-span-2">
-	<a href="/success">Submit</a>
-</div>
