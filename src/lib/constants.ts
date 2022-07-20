@@ -16,7 +16,7 @@ export const contact = {
 
 export const sitemap = [
 	{ title: 'Contact Us', href: '/contact-us' },
-	{ title: 'About', href: '/about-us' }
+	{ title: 'About', href: '/coming-soon' }
 ];
 
 export const POSTMARK_API_KEY = dev
