@@ -43,8 +43,8 @@
 <div class="mx-auto max-w-7xl" on:mousemove={handleMousemove}>
 	<div
 		class="absolute inset-0 w-full h-full sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden bg-gray-900 {day
-			? "bg-[url('backgrounds/Valley-day.svg')]"
-			: "bg-[url('backgrounds/Valley-night.svg')]"} bg-cover bg-center bg-fixed transition-all  ease-in duration-500"
+			? "bg-[url('/backgrounds/Valley-day.svg')]"
+			: "bg-[url('/backgrounds/Valley-night.svg')]"} bg-cover bg-center bg-fixed transition-all  ease-in duration-500"
 	>
 		<div class="mt-64 md:mt-32 md:grid md:grid-cols-4 md:grid-rows-4 md:gap-8">
 			<div
