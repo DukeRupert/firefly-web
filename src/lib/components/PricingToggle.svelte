@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { monthlySub } from '$lib/stores';
 
-	console.log($monthlySub);
-
 	function monthly() {
 		monthlySub.set(true);
 	}
