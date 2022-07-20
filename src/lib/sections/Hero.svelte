@@ -40,35 +40,36 @@
 
 <svelte:window bind:scrollY={y} bind:innerWidth={width} bind:innerHeight={height} />
 
-<div class="mx-auto max-w-7xl" on:mousemove={handleMousemove}>
+<div
+	class="fixed -z-10 top-0 left-0 w-screen h-screen bg-gray-900 {day
+		? "bg-[url('/backgrounds/Valley-day.svg')]"
+		: "bg-[url('/backgrounds/Valley-night.svg')]"} bg-cover bg-center transition-all  ease-in duration-500"
+/>
+<div class="mx-auto max-w-6xl" on:mousemove={handleMousemove}>
 	<div
-		class="absolute inset-0 w-full h-full sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden bg-gray-900 {day
-			? "bg-[url('/backgrounds/Valley-day.svg')]"
-			: "bg-[url('/backgrounds/Valley-night.svg')]"} bg-cover bg-center bg-fixed transition-all  ease-in duration-500"
+		class="mt-[30vh] mb-[50vh] mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
 	>
-		<div class="mt-64 md:mt-32 md:grid md:grid-cols-4 md:grid-rows-4 md:gap-8">
-			<div
-				class="col-span-2 col-start-2 px-4 sm:px-6 sm:text-center md:max-w-2xl lg:text-left lg:flex lg:items-center"
-			>
-				<div>
-					<h1
-						class="mt-4 text-4xl tracking-tight font-extrabold {day
-							? 'text-gray-900'
-							: 'text-gray-300'} sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl transition-colors ease-in duration-500"
-					>
-						<span class="md:block">Web Developers</span>
-						<span class="text-blue-600 md:block">Helping You Grow</span>
-					</h1>
-					<p
-						class="mt-3 text-base {day
-							? 'text-gray-700'
-							: 'text-gray-400'} sm:mt-5 sm:text-xl lg:text-lg xl:text-xl transition-colors ease-in duration-500"
-					>
-						The internet can be difficult. Let us deal with the web so you can focus on growing your
-						business.
-					</p>
-				</div>
+		<div class="text-left md:max-w-4xl lg:flex lg:items-center">
+			<div>
+				<h1
+					class="mt-4 text-4xl tracking-tight font-extrabold {day
+						? 'text-gray-900'
+						: 'text-gray-300'} sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl transition-colors ease-in duration-500"
+				>
+					<span class="block">Web Developers</span>
+					<span class="text-blue-600 sm:block">Helping You Grow</span>
+				</h1>
+				<p
+					class="mt-3 text-base {day
+						? 'text-gray-700'
+						: 'text-gray-400'} sm:mt-5 sm:text-xl lg:text-lg xl:text-xl transition-colors ease-in duration-500"
+				>
+					The internet can be difficult. Let us deal with the web so you can focus on growing your
+					business.
+				</p>
 			</div>
 		</div>
 	</div>
 </div>
+
+<!-- sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden -->
