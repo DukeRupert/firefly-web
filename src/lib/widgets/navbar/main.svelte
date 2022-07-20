@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { logo } from '$lib/constants';
 	import { isNavOpen } from '$lib/stores';
+	import { sitemap, contact } from '$lib/constants';
+
 	let y = 0;
 	$: opacity = Math.round(y / 5) / 100;
 
@@ -49,22 +51,27 @@
 				</div>
 			</div>
 			<div class="hidden space-x-8 md:flex md:ml-10">
-				<a href="#" class="text-base font-medium text-white hover:text-gray-300">Product</a>
-
-				<a href="#" class="text-base font-medium text-white hover:text-gray-300">Features</a>
-
-				<a href="#" class="text-base font-medium text-white hover:text-gray-300">Marketplace</a>
-
-				<a href="#" class="text-base font-medium text-white hover:text-gray-300">Company</a>
+				{#each sitemap as { title, href }}
+					<a {href} sveltekit:prefetch class="text-base font-medium text-white hover:text-gray-300"
+						>{title}</a
+					>
+				{/each}
 			</div>
 		</div>
 		<div class="hidden md:flex md:items-center md:space-x-6">
-			<a href="#" class="text-base font-medium text-white hover:text-gray-300"> Log in </a>
 			<a
-				href="#"
-				class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700"
+				href={contact.phone.href}
+				class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-indigo-500"
 			>
-				Start free trial
+				<svg class="h-6 w-6 mr-4 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+					/>
+				</svg>
+				Call
 			</a>
 		</div>
 	</nav>
