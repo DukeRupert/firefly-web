@@ -22,7 +22,7 @@
 			'Includes 3 custom pages',
 			'Up to 10k posts',
 			'Easy to edit content',
-			'Free site analytics',
+			'Basic analytics',
 			'SEO friendly'
 		]
 	};
@@ -36,7 +36,7 @@
 			'Custom domain',
 			'Up to 5 custom pages',
 			'Custom forms to meet your business needs',
-			'Free site analytics to learn about your customers',
+			'Advanced site analytics',
 			'Geographic SEO included (ie. Google maps, etc )',
 			''
 		]
@@ -61,7 +61,7 @@
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="bg-blue-600 my-20 md:my-30 lg:my-40">
+<div class="bg-blue-600 mt-16 md:mt-24 lg:mt-32 rounded-lg">
 	<div class="relative bg-blue-600 max-w-6xl mx-auto rounded-lg py-16 sm:py-24 lg:py-32">
 		<div
 			class="relative bg-blue-600 max-w-2xl mx-auto px-4 text-center sm:px-6 lg:max-w-7xl lg:px-8"

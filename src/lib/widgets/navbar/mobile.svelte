@@ -20,16 +20,6 @@
 	}
 </script>
 
-<!--
-      Mobile menu, show/hide based on menu open state.
-
-      Entering: "duration-150 ease-out"
-        From: "opacity-0 scale-95"
-        To: "opacity-100 scale-100"
-      Leaving: "duration-100 ease-in"
-        From: "opacity-100 scale-100"
-        To: "opacity-0 scale-95"
-    -->
 {#if $isNavOpen}
 	<div
 		class="fixed top-0 inset-x-0 p-2 transition transform origin-top md:hidden {isNavOpen

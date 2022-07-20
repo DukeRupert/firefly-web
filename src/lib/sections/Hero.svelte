@@ -65,7 +65,7 @@
 						: 'text-gray-400'} sm:mt-5 sm:text-xl lg:text-lg xl:text-xl transition-colors ease-in duration-500"
 				>
 					The internet can be difficult. Let us deal with the web so you can focus on growing your
-					business.
+					business. Proudly based in Helena, MT.
 				</p>
 			</div>
 		</div>
