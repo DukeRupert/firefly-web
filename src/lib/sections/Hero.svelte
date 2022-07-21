@@ -43,7 +43,7 @@
 <div
 	class="fixed -z-10 top-0 left-0 w-screen h-screen bg-gray-900 {day
 		? "bg-[url('/backgrounds/Valley-day.svg')]"
-		: "bg-[url('/backgrounds/Valley-night.svg')]"} bg-cover bg-center transition-all  ease-in duration-400"
+		: "bg-[url('/backgrounds/Valley-night.svg')]"} bg-cover bg-center transition-all  ease-in duration-500"
 />
 <div class="mx-auto max-w-6xl" on:mousemove={handleMousemove}>
 	<div
@@ -54,7 +54,7 @@
 				<h1
 					class="mt-4 text-4xl tracking-tight font-extrabold {day
 						? 'text-gray-900'
-						: 'text-gray-300'} sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl transition-colors ease-in duration-400"
+						: 'text-gray-300'} sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl transition-colors ease-in duration-500"
 				>
 					<span class="block">Web Developers</span>
 					<span class="text-blue-600 sm:block">Helping You Grow</span>
