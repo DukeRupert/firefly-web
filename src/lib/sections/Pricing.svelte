@@ -14,8 +14,8 @@
 	const blog: Card = {
 		title: 'Blog',
 		price: {
-			monthly: 30,
-			yearly: 20
+			monthly: 50,
+			yearly: 40
 		},
 		features: [
 			'Custom domain',
@@ -29,8 +29,8 @@
 	const business: Card = {
 		title: 'Business',
 		price: {
-			monthly: 75,
-			yearly: 60
+			monthly: 150,
+			yearly: 120
 		},
 		features: [
 			'Custom domain',
@@ -44,8 +44,8 @@
 	const ecommerce: Card = {
 		title: 'eCommerce',
 		price: {
-			monthly: 120,
-			yearly: 100
+			monthly: 250,
+			yearly: 200
 		},
 		features: [
 			'Custom domain',
