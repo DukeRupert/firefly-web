@@ -2,7 +2,7 @@ import { dev } from '$app/env';
 
 export const logo = {
 	title: 'Firefly Software Engineering',
-	src: '/logo-blue.svg',
+	src: '/firefly_logo_white.svg',
 	alt: 'Firefly Software Engineering logo'
 };
 

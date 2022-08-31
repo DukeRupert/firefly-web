@@ -25,7 +25,7 @@
 			<div class="flex items-center justify-between w-full md:w-auto">
 				<a href="/">
 					<span class="sr-only">{logo.title}</span>
-					<img class="h-8 w-auto sm:h-10" src={logo.src} alt={logo.alt} />
+					<img class="h-12 w-auto sm:h-16" src={logo.src} alt={logo.alt} />
 				</a>
 				<div class="-mr-2 flex items-center md:hidden">
 					<button
