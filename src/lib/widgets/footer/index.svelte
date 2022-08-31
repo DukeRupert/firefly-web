@@ -28,10 +28,10 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <footer class="bg-white" aria-labelledby="footer-heading">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
-	<div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+	<div class="max-w-7xl mx-auto mt-16 md:mt-24 lg:mt-32 py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
 		<div class="xl:grid xl:grid-cols-3 xl:gap-8">
 			<div class="space-y-8 xl:col-span-1">
-				<img class="h-20" src="/logoFull.png" alt={logo.alt} />
+				<img class="h-20" src="/firefly_logo_black.svg" alt={logo.alt} />
 				<p class="text-gray-500 text-base">
 					We are passionate about helping businesses succeed by improving the user experience for
 					both our clients and their customers.

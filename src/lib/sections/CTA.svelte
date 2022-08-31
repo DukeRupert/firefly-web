@@ -3,7 +3,7 @@
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="bg-blue-600">
+<div class="bg-primary-100">
 	<div
 		class="max-w-2xl mx-auto text-center mt-16 md:mt-24 lg:mt-32 py-16 px-4 sm:py-20 sm:px-6 lg:px-8"
 	>
@@ -11,7 +11,7 @@
 			<span class="block">Ready to Grow?</span>
 			<span class="block">Let's start today.</span>
 		</h2>
-		<p class="mt-4 text-lg leading-6 text-indigo-200">
+		<p class="mt-4 text-lg leading-6 text-gray-300">
 			Stand out with a tailored web experience crafted by professionals. Focus on what matters and
 			leave the web to us.
 		</p>

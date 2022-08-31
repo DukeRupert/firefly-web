@@ -15,7 +15,7 @@
 
 <div
 	class="fixed top-0 w-full z-50 py-6 transition-opacity ease-out duration-150"
-	style={`opacity: ${opacity}; background-color: #0C1226`}
+	style={`opacity: ${opacity}; background-color: #081040`}
 >
 	<nav
 		class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
@@ -30,7 +30,7 @@
 				<div class="-mr-2 flex items-center md:hidden">
 					<button
 						type="button"
-						class="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
+						class="bg-primary-500 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
 						aria-expanded="false"
 						on:click={handleClick}
 					>
@@ -61,7 +61,7 @@
 		<div class="hidden md:flex md:items-center md:space-x-6">
 			<a
 				href={contact.phone.href}
-				class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-indigo-500"
+				class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-primary-100 hover:bg-primary-50"
 			>
 				<svg class="h-6 w-6 mr-4 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
 					<path

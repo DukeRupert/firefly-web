@@ -61,10 +61,10 @@
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="bg-blue-600 mt-16 md:mt-24 lg:mt-32 rounded-lg">
-	<div class="relative bg-blue-600 max-w-6xl mx-auto rounded-lg py-16 sm:py-24 lg:py-32">
+<div class="bg-primary-100 mt-16 md:mt-24 lg:mt-32 rounded-lg">
+	<div class="relative bg-primary-100 max-w-6xl mx-auto rounded-lg py-16 sm:py-24 lg:py-32">
 		<div
-			class="relative bg-blue-600 max-w-2xl mx-auto px-4 text-center sm:px-6 lg:max-w-7xl lg:px-8"
+			class="relative bg-primary-100 max-w-2xl mx-auto px-4 text-center sm:px-6 lg:max-w-7xl lg:px-8"
 		>
 			<h1 class="text-4xl font-extrabold tracking-tight text-white md:text-6xl lg:text-6xl">
 				<span class="block">Simple pricing.</span>

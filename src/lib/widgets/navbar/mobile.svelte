@@ -29,7 +29,11 @@
 		<div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
 			<div class="px-5 pt-4 flex items-center justify-between">
 				<div>
-					<img class="h-8 w-auto" src={logo.src} alt={logo.alt} />
+					<img
+						class="h-14 w-auto sm:h-18 p-2 bg-primary-500 rounded-md"
+						src={logo.src}
+						alt={logo.alt}
+					/>
 				</div>
 				<div class="-mr-2">
 					<button

@@ -9,7 +9,8 @@
 <main>
 	<Hero />
 	<Features />
-	<Pricing />
-	<LogoCloud />
+	<!-- <Pricing /> -->
+
 	<Cta />
+	<LogoCloud />
 </main>

@@ -5,7 +5,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="relative bg-white max-w-6xl mx-auto rounded-lg py-16 sm:py-24 lg:py-32">
 	<div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-		<h2 class="text-base font-semibold uppercase tracking-wider text-blue-600">Scale Faster</h2>
+		<h2 class="text-base font-semibold uppercase tracking-wider text-primary-100">Scale Faster</h2>
 		<p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
 			Everything you need to grow your company
 		</p>
@@ -20,7 +20,7 @@
 						<div class="-mt-6">
 							<div>
 								<span
-									class="inline-flex items-center justify-center rounded-md bg-blue-500 p-3 shadow-lg"
+									class="inline-flex items-center justify-center rounded-md bg-primary-200 p-3 shadow-lg"
 								>
 									<!-- Shopping Cart -->
 									<svg
@@ -51,7 +51,7 @@
 						<div class="-mt-6">
 							<div>
 								<span
-									class="inline-flex items-center justify-center rounded-md bg-blue-500 p-3 shadow-lg"
+									class="inline-flex items-center justify-center rounded-md bg-primary-200 p-3 shadow-lg"
 								>
 									<!-- Globe -->
 									<svg
@@ -86,7 +86,7 @@
 						<div class="-mt-6">
 							<div>
 								<span
-									class="inline-flex items-center justify-center rounded-md bg-blue-500 p-3 shadow-lg"
+									class="inline-flex items-center justify-center rounded-md bg-primary-200 p-3 shadow-lg"
 								>
 									<!-- Code -->
 									<svg
@@ -121,7 +121,7 @@
 						<div class="-mt-6">
 							<div>
 								<span
-									class="inline-flex items-center justify-center rounded-md bg-blue-500 p-3 shadow-lg"
+									class="inline-flex items-center justify-center rounded-md bg-primary-200 p-3 shadow-lg"
 								>
 									<!-- Lightbuilb -->
 									<svg
@@ -155,7 +155,7 @@
 						<div class="-mt-6">
 							<div>
 								<span
-									class="inline-flex items-center justify-center rounded-md bg-blue-500 p-3 shadow-lg"
+									class="inline-flex items-center justify-center rounded-md bg-primary-200 p-3 shadow-lg"
 								>
 									<!-- Smart Phone -->
 									<svg
@@ -186,7 +186,7 @@
 						<div class="-mt-6">
 							<div>
 								<span
-									class="inline-flex items-center justify-center rounded-md bg-blue-500 p-3 shadow-lg"
+									class="inline-flex items-center justify-center rounded-md bg-primary-200 p-3 shadow-lg"
 								>
 									<!-- Upward Trend -->
 									<svg

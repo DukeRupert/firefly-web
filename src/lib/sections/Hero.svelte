@@ -34,12 +34,12 @@
 						: 'text-gray-300'} sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl transition-colors ease-in duration-500"
 				>
 					<span class="block">Web Developers</span>
-					<span class="text-blue-600 sm:block">Helping You Grow</span>
+					<span class="text-primary-100 sm:block">Helping You Grow</span>
 				</h1>
 				<p
-					class="mt-3 text-base {day
-						? 'text-gray-700'
-						: 'text-gray-400'} sm:mt-5 sm:text-xl lg:text-lg xl:text-xl transition-colors ease-in duration-500"
+					class="mt-3 text-base font-semibold {day
+						? 'text-gray-800'
+						: 'text-gray-300'} sm:mt-5 sm:text-xl lg:text-lg xl:text-xl transition-colors ease-in duration-500"
 				>
 					The internet can be difficult. Let us deal with the web so you can focus on growing your
 					business. Proudly based in Helena, MT.
