@@ -1,4 +1,4 @@
-import { dev } from '$app/env';
+import { dev } from '$app/environment';
 
 export const logo = {
 	title: 'Firefly Software Engineering',
