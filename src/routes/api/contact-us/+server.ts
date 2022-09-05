@@ -1,10 +1,11 @@
 import postmark from 'postmark';
 import { POSTMARK_API_KEY } from '$lib/constants';
+import type { RequestHandler } from './$types';
 
 // Send an email:
 const client = new postmark.ServerClient(POSTMARK_API_KEY);
 
-export async function POST({ request }) {
+export const POST: RequestHandler = async ({ request }) => {
 	const body = await request.formData();
 
 	// Convert formData to JSON
@@ -32,14 +33,9 @@ export async function POST({ request }) {
 		});
 
 		if (res.ErrorCode) {
-			return {
-				status: res.ErrorCode,
-				body: res.Message
-			};
+			return new Response(res.Message, { status: res.ErrorCode });
 		} else {
-			return {
-				status: 201
-			};
+			return new Response(undefined, { status: 201 });
 		}
 	}
-}
+};
