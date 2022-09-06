@@ -1,5 +1,3 @@
-import { dev } from '$app/environment';
-
 export const logo = {
 	title: 'Firefly Software Engineering',
 	src: '/firefly_logo_white.svg',
@@ -19,6 +17,4 @@ export const sitemap = [
 	{ title: 'About', href: '/coming-soon' }
 ];
 
-export const POSTMARK_API_KEY = dev
-	? import.meta.env.VITE_POSTMARK_API_KEY
-	: process.env.POSTMARK_API_KEY;
+export const POSTMARK_API_KEY = process.env.POSTMARK_API_KEY;
