@@ -1,16 +1,34 @@
 <script lang="ts">
+	import SimpleHero from '$lib/components/SimpleHero.svelte';
 	import Cta from '$lib/sections/CTA.svelte';
 	import Features from '$lib/sections/Features.svelte';
-	import Hero from '$lib/sections/Hero.svelte';
 	import LogoCloud from '$lib/sections/LogoCloud.svelte';
-	import Pricing from '$lib/sections/Pricing.svelte';
+
+	const Hero = {
+		title: {
+			text: 'Modern Website Development',
+			focus: 'in Helena, MT'
+		},
+		text: `Our professional web developers create exceptional online experiences to help you grow your business.`,
+		primaryAction: {
+			label: 'Get started',
+			href: '/contact-us'
+		},
+		secondaryAction: {
+			label: 'Learn More',
+			href: '#features'
+		},
+
+		image: {
+			src: '/laptop-blue.png',
+			alt: 'Todo'
+		}
+	};
 </script>
 
 <main>
-	<Hero />
+	<SimpleHero {Hero} />
 	<Features />
-	<!-- <Pricing /> -->
-
-	<Cta />
 	<LogoCloud />
+	<Cta />
 </main>

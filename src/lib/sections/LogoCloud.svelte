@@ -14,13 +14,13 @@
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div
-	class="relative bg-white max-w-6xl mx-auto rounded-lg mt-16 md:mt-24 lg:mt-32 py-16 sm:py-24 lg:py-32"
->
+<div class="relative bg-white max-w-6xl mx-auto rounded-lg  py-16 sm:py-24 lg:py-32">
 	<div class="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-		<p class="text-center text-base font-semibold uppercase text-gray-600 tracking-wider">
+		<h2
+			class="text-center text-3xl font-extrabold sm:text-4xl uppercase text-gray-900 tracking-tight"
+		>
 			Proudly trusted by
-		</p>
+		</h2>
 		<div class="mt-8 h-32 w-64 relative flex mx-auto">
 			<Carousel {logos} />
 		</div>

@@ -31,6 +31,12 @@ module.exports = {
 					800: '#000000',
 					900: '#000000'
 				}
+			},
+			transitionTimingFunction: {
+				'expo-in': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',
+				'expo-out': 'cubic-bezier(0.19, 1, 0.22, 1)',
+				'quint-out': 'cubic-bezier(0.22, 1, 0.36, 1)',
+				'quint-in': 'cubic-bezier(0.64, 0, 0.78, 0)'
 			}
 		}
 	},

@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { fly } from 'svelte/transition';
-	import { sineIn, sineOut } from 'svelte/easing';
+	import { quintIn, quintOut } from 'svelte/easing';
+
+	import { fade } from 'svelte/transition';
 
 	interface Logo {
 		src: string;
@@ -22,8 +23,7 @@
 {#each [logos[index]] as { src, alt } (index)}
 	<img
 		on:click={next}
-		in:fly={{ x: 200, duration: 500, easing: sineIn }}
-		out:fly={{ x: -200, duration: 300, easing: sineOut }}
+		in:fade={{ duration: 500, easing: quintIn }}
 		{src}
 		{alt}
 		class="absolute h-40 w-60 object-contain"
