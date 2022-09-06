@@ -18,7 +18,6 @@
 			label: 'Learn More',
 			href: '#features'
 		},
-
 		image: {
 			src: '/laptop-blue.png',
 			alt: 'Todo'
